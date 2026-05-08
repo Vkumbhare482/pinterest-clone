@@ -1,0 +1,128 @@
+/* Footer.css */
+
+.pinterest-footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+
+  padding: 90px 80px 40px;
+
+  position: relative;
+  z-index: 1;
+}
+
+.pinterest-footer-container {
+  max-width: 1600px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 120px;
+}
+
+/* LEFT */
+
+.pinterest-footer-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  min-height: 320px;
+}
+
+.pinterest-footer-logo {
+  font-size: 64px;
+  font-weight: 700;
+
+  color: white;
+  letter-spacing: -2px;
+
+  margin: 0;
+}
+
+.pinterest-footer-copy {
+  font-size: 18px;
+  color: #d1d1d1;
+
+  margin: 0;
+}
+
+/* RIGHT */
+
+.pinterest-footer-right {
+  display: flex;
+  gap: 120px;
+}
+
+.pinterest-footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.pinterest-footer-column h3 {
+  font-size: 24px;
+  font-weight: 700;
+
+  margin-bottom: 28px;
+  color: white;
+}
+
+.pinterest-footer-column a {
+  color: #e5e5e5;
+  text-decoration: none;
+
+  font-size: 20px;
+  margin-bottom: 22px;
+
+  transition: 0.3s ease;
+}
+
+.pinterest-footer-column a:hover {
+  color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1100px) {
+
+  .pinterest-footer-container {
+    flex-direction: column;
+    gap: 60px;
+  }
+
+  .pinterest-footer-right {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+
+  .pinterest-footer-left {
+    min-height: auto;
+    gap: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .pinterest-footer {
+    padding: 60px 30px;
+  }
+
+  .pinterest-footer-logo {
+    font-size: 48px;
+  }
+
+  .pinterest-footer-right {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .pinterest-footer-column h3 {
+    font-size: 20px;
+  }
+
+  .pinterest-footer-column a {
+    font-size: 17px;
+  }
+}
